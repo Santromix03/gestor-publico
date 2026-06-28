@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cb.addEventListener('change', async()=>{subtareas[index].completada=cb.checked;item.classList.toggle('completada',cb.checked);await guardarSubtareas(tareaId,subtareas);const card=document.querySelector(`.task-card[data-id="${tareaId}"]`);if(card)card.tareaData.subtareas=JSON.stringify(subtareas);});
             const tx=document.createElement('span'); tx.className='subtarea-texto'; tx.textContent=sub.texto;
             const btn=document.createElement('button'); btn.className='btn-eliminar-sub'; btn.innerHTML='<i class="fa-solid fa-trash-can"></i>';
-            btn.addEventListener('click',async()=>{subtareas.splice(index,1);await guardarSubtareas(tareaId,subtareas);const card=document.querySelector(`.task-card[data-id="${tareaId}"]`);if(card)card.tareaData.subtareas=JSON.stringify(subtareas);renderizarSubtareas(subtareas,tareaId);mostrarNotificacion('Subtarea eliminada oite bebé');});
+            btn.addEventListener('click',async()=>{subtareas.splice(index,1);await guardarSubtareas(tareaId,subtareas);const card=document.querySelector(`.task-card[data-id="${tareaId}"]`);if(card)card.tareaData.subtareas=JSON.stringify(subtareas);renderizarSubtareas(subtareas,tareaId);mostrarNotificacion('Subtarea eliminada correctamente');});
             item.appendChild(cb); item.appendChild(tx); item.appendChild(btn); lista.appendChild(item);
         });
     }
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const importancia=document.querySelector('input[name="editar-importancia"]:checked')?.value;
         if (!['alta','media','baja'].includes(importancia)) { mostrarNotificacion('Importancia inválida','error'); return; }
         const { error } = await supabase.from('tareas').update({titulo,descripcion,fecha_entrega:fecha||null,importancia}).eq('id',id);
-        if (!error) { modalEditar.classList.add('oculto'); mostrarNotificacion('Tarea actualizada amorcito'); cargarTareas(); }
+        if (!error) { modalEditar.classList.add('oculto'); mostrarNotificacion('Tarea actualizada con éxito'); cargarTareas(); }
         else mostrarNotificacion('Error al guardar','error');
     });
 
