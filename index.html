@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de tareas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="icon" type="image/svg+xml" href="icon.png">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <style>
+        .checkbox-group a { color:#e29587; }
+    </style>
+</head>
+<body>
+
+<div class="bg-window" style="pointer-events:none;z-index:-99;">
+  <div class="bg-track">
+    <img src="img9.jpg"><img src="img8.jpg"><img src="img11.jpg"><img src="img4.jpg">
+    <img src="img5.jfif"><img src="img6.jpg"><img src="img7.jpg"><img src="img10.jpg">
+    <img src="img9.jpg"><img src="img8.jpg"><img src="img11.jpg"><img src="img4.jpg">
+    <img src="img5.jfif"><img src="img6.jpg"><img src="img7.jpg"><img src="img10.jpg">
+  </div>
+</div>
+
+<div class="main-container">
+    <div class="card">
+        <div class="left-panel" id="carousel-panel">
+            <div class="carousel-viewport">
+                <div class="carousel-track" id="track">
+                    <div class="slide"><img src="img1.jpeg" alt="Imagen 1"></div>
+                    <div class="slide"><img src="img2.jpeg" alt="Imagen 2"></div>
+                    <div class="slide"><img src="img3.jpeg" alt="Imagen 3"></div>
+                </div>
+            </div>
+            <div class="dots-container">
+                <span class="dot active" onclick="manualSlide(0)"></span>
+                <span class="dot" onclick="manualSlide(1)"></span>
+                <span class="dot" onclick="manualSlide(2)"></span>
+            </div>
+        </div>
+
+        <div class="right-panel">
+
+            <!-- ================= LOGIN ================= -->
+            <div id="vistaLogin">
+                <div class="form-header">
+                    <h3>Login</h3>
+                </div>
+
+                <form id="formLogin" method="POST">
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope input-icon"></i>
+                        <input type="email" id="login-email" name="email" placeholder="Tu E-Mail va aquí" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock input-icon"></i>
+                        <input type="password" id="login-password" name="password" placeholder="........." required>
+                        <i class="fa-solid fa-eye-slash input-icon-toggle" id="toggleLoginPass"></i>
+                    </div>
+                    <button type="submit" class="btn-submit" id="btnLoginSubmit">Login</button>
+                </form>
+
+                <p class="switch-text">¿No tienes una cuenta? <a href="#" id="toggleAuthBtn">Registrarse</a></p>
+            </div>
+
+            <!-- ================= REGISTRO ================= -->
+            <div id="vistaRegistro" style="display:none;">
+                <div class="form-header">
+                    <h3>Registrarse</h3>
+                </div>
+
+                <form id="formRegistro" method="POST">
+                    <div class="input-group" style="margin-bottom:20px;">
+                        <label class="label-google">VERIFICA TU CORREO CON GOOGLE</label>
+                        <div id="googleBtnContainer" style="margin-top:8px;"></div>
+                        <small id="googleVerificadoTxt" style="display:none;color:#8fd19e;font-size:11px;">
+                            <i></i> Correo verificado ✓
+                        </small>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fa-solid fa-user input-icon"></i>
+                        <input type="text" id="reg-nombre" name="nombre" placeholder="Tu nombre completo" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope input-icon"></i>
+                        <input type="email" id="reg-email" name="email" placeholder="Tu E-Mail va aquí" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock input-icon"></i>
+                        <input type="password" id="reg-password" name="password" placeholder="Mínimo 6 caracteres" minlength="6" required>
+                        <i class="fa-solid fa-eye-slash input-icon-toggle" id="toggleRegPass"></i>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="terms" name="terms">
+                            <label for="terms">Acepto los <a href="#" id="termsLink">terms of service</a></label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit" id="btnRegistroSubmit">Crear cuenta</button>
+                </form>
+
+                <p class="switch-text">¿Ya tienes una cuenta? <a href="#" id="toggleToLoginBtn">Login</a></p>
+            </div>
+
+            <!-- ================= MODAL TÉRMINOS ================= -->
+            <div id="termsModal" class="modal-overlay">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Términos de Servicio</h2>
+                    <div class="modal-body">
+                        <p>
+                            Bienvenida a este pequeño espacio que existe por ti y para ti.
+                            No es solo una página de tareas; es un lugar donde se guardan ideas,
+                            sueños pendientes y metas que merecen ser cumplidas con calma y amor.
+                        </p>
+                        <p>
+                            Al usar esta plataforma, aceptas este acuerdo no como una obligación,
+                            sino como un compromiso contigo misma y con todo lo que deseas lograr.
+                        </p>
+                        <ul>
+                            <li><strong>Cuidado de este espacio:</strong><br>Este lugar es solo tuyo.</li>
+                            <li><strong>Confianza y privacidad:</strong><br>Todo lo que escribas aquí se queda aquí, protegido y respetado.</li>
+                            <li><strong>Acceso personal:</strong><br>Tu contraseña es una llave que abre solo tu propio espacio.</li>
+                        </ul>
+                        <p>Esta plataforma fue creada para acompañarte, no para exigirte.</p>
+                    </div>
+                    <button id="acceptBtn" class="modal-action-btn">Entendido</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
