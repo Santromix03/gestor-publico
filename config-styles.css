@@ -2,68 +2,67 @@
    TEMAS — Variables por clase en body
    ========================================= */
 
-/* AURORA BOREAL */
+/* DRACULA PRO */
 body.tema-aurora-boreal {
-    --bg-dark: #071a14;
-    --bg-sidebar: #0d261d;
-    --card-bg: #143329;
-    --bg-card: #143329;
-    --primary-pink: #2ecc71; /* Verde esmeralda */
-    --text-white: #e8f8f0;
-    --text-gray: #8abf9e;
-    --bg-modal: #0d261d;
-    --bg-input: #143329;
-    --text-main: #e8f8f0;
-    --text-muted: #8abf9e;
-    --accent: #2ecc71;
-    --accent-hover: #27ae60;
-    --border-light: rgba(46, 204, 113, 0.15);
-    --neon-color: #2ecc71;
-    --neon-shadow: 0 0 10px rgba(46, 204, 113, 0.6), 0 0 20px rgba(46, 204, 113, 0.3);
-    --column-bg: rgba(20, 51, 41, 0.5);
+    --bg-dark: #1e1f29;
+    --bg-sidebar: #282a36;
+    --card-bg: #343746;
+    --bg-card: #343746;
+    --primary-pink: #ff79c6; /* Rosa Dracula */
+    --text-white: #f8f8f2;
+    --text-gray: #a9aebb;
+    --bg-modal: #282a36;
+    --bg-input: #343746;
+    --text-main: #f8f8f2;
+    --text-muted: #a9aebb;
+    --accent: #bd93f9; /* Morado Dracula */
+    --accent-hover: #9d7cd8;
+    --border-light: rgba(189, 147, 249, 0.18);
+    --neon-color: #bd93f9;
+    --neon-shadow: 0 0 10px rgba(189, 147, 249, 0.55), 0 0 20px rgba(255, 121, 198, 0.25);
+    --column-bg: rgba(52, 55, 70, 0.55);
 }
 
-/* SOLEADO */
+/* DEEP OCEAN */
 body.tema-soleado {
-    --bg-dark: #1a0505;
-    --bg-sidebar: #2d0a0a;
-    --card-bg: #3d1212;
-    --bg-card: #3d1212;
-    --primary-pink: #a52a2a; /* Borgoña */
-    --text-white: #ffebeb;
-    --text-gray: #b38f8f;
-    --bg-modal: #2d0a0a;
-    --bg-input: #3d1212;
-    --text-main: #ffebeb;
-    --text-muted: #b38f8f;
-    --accent: #e63946;
-    --accent-hover: #c1121f;
-    --border-light: rgba(165, 42, 42, 0.2);
-    --neon-color: #a52a2a;
-    --neon-shadow: 0 0 10px rgba(165, 42, 42, 0.5), 0 0 20px rgba(165, 42, 42, 0.2);
-    --column-bg: rgba(61, 18, 18, 0.5);
+    --bg-dark: #021b1f;
+    --bg-sidebar: #04282e;
+    --card-bg: #0a3940;
+    --bg-card: #0a3940;
+    --primary-pink: #1abc9c; /* Teal profundo */
+    --text-white: #e3fbf7;
+    --text-gray: #6fa8a0;
+    --bg-modal: #04282e;
+    --bg-input: #0a3940;
+    --text-main: #e3fbf7;
+    --text-muted: #6fa8a0;
+    --accent: #17a589;
+    --accent-hover: #128a72;
+    --border-light: rgba(23, 165, 137, 0.2);
+    --neon-color: #17a589;
+    --neon-shadow: 0 0 10px rgba(23, 165, 137, 0.5), 0 0 20px rgba(23, 165, 137, 0.25);
+    --column-bg: rgba(10, 57, 64, 0.6);
 }
 
-/* OCÉANO PROFUNDO */
-/* OCÉANO PROFUNDO (Azul Real / Vibrante) */
+/* LAVA SUNSET */
 body.tema-oceano {
-    --bg-dark: #020c1b;        /* Azul noche casi negro */
-    --bg-sidebar: #051933;     /* Azul marino profundo */
-    --card-bg: #0a2547;        /* Azul petróleo */
-    --bg-card: #0a2547;
-    --primary-pink: #00d2ff;   /* Celeste neón vibrante */
-    --text-white: #e0f7ff;     /* Blanco azulado */
-    --text-gray: #5baec5;      /* Gris azulado */
-    --bg-modal: #051933;
-    --bg-input: #0a2547;
-    --text-main: #e0f7ff;
-    --text-muted: #5baec5;
-    --accent: #00d2ff;
-    --accent-hover: #0099ff;
-    --border-light: rgba(0, 210, 255, 0.2);
-    --neon-color: #00d2ff;
-    --neon-shadow: 0 0 10px rgba(0, 210, 255, 0.6), 0 0 20px rgba(0, 210, 255, 0.3);
-    --column-bg: rgba(10, 37, 71, 0.6);
+    --bg-dark: #1a0500;
+    --bg-sidebar: #2b0a02;
+    --card-bg: #3d1206;
+    --bg-card: #3d1206;
+    --primary-pink: #ff5e1a;   /* Naranja lava */
+    --text-white: #ffe9d6;
+    --text-gray: #c98f6a;
+    --bg-modal: #2b0a02;
+    --bg-input: #3d1206;
+    --text-main: #ffe9d6;
+    --text-muted: #c98f6a;
+    --accent: #ff3d00;
+    --accent-hover: #d93000;
+    --border-light: rgba(255, 93, 26, 0.22);
+    --neon-color: #ff7a1a;
+    --neon-shadow: 0 0 10px rgba(255, 93, 26, 0.55), 0 0 20px rgba(255, 160, 0, 0.3);
+    --column-bg: rgba(61, 18, 6, 0.55);
 }
 /* MONOCROMO */
 body.tema-monocromo {
@@ -96,21 +95,21 @@ body.tema-monocromo .column {
 
 
 body.tema-aurora-boreal .task-badge {
-    background: rgba(46, 204, 113, 0.15);
-    color: #2ecc71;
-    border: 1px solid rgba(46, 204, 113, 0.3);
+    background: rgba(189, 147, 249, 0.15);
+    color: #bd93f9;
+    border: 1px solid rgba(189, 147, 249, 0.3);
 }
 
 body.tema-soleado .task-badge {
-    background: rgba(165, 42, 42, 0.15);
-    color: #e63946;
-    border: 1px solid rgba(165, 42, 42, 0.3);
+    background: rgba(23, 165, 137, 0.15);
+    color: #17a589;
+    border: 1px solid rgba(23, 165, 137, 0.3);
 }
 
 body.tema-oceano .task-badge {
-    background: rgba(0, 210, 255, 0.15);
-    color: #00d2ff;
-    border: 1px solid rgba(0, 210, 255, 0.3);
+    background: rgba(255, 61, 0, 0.15);
+    color: #ff5e1a;
+    border: 1px solid rgba(255, 61, 0, 0.3);
 }
 
 body.tema-monocromo .task-badge {
@@ -231,13 +230,13 @@ body.light-mode .column {
     overflow: hidden;
     display: flex;
     border: 1px solid rgba(255,255,255,0.08);
-    background: #1e1621;
+    background: #05070d;
 }
 
 .tp-sidebar {
     width: 30px;
     height: 100%;
-    background: #281e2b;
+    background: #0a0f1e;
     flex-shrink: 0;
 }
 .tp-main {
@@ -250,7 +249,7 @@ body.light-mode .column {
 .tp-topbar {
     height: 12px;
     border-radius: 4px;
-    background: rgba(255,255,255,0.08);
+    background: rgba(0, 234, 255, 0.3);
 }
 .tp-cols {
     flex: 1;
@@ -260,34 +259,34 @@ body.light-mode .column {
 .tp-col {
     flex: 1;
     border-radius: 4px;
-    background: rgba(255,255,255,0.05);
+    background: rgba(17, 23, 43, 0.7);
 }
 
-/* Aurora Boreal preview (Verde) */
-.tema-preview.aurora { background: #071a14; }
-.tema-preview.aurora .tp-sidebar { background: #0d261d; }
-.tema-preview.aurora .tp-topbar { background: rgba(46, 204, 113, 0.3); }
-.tema-preview.aurora .tp-col { background: rgba(20, 51, 41, 0.5); }
+/* Dracula Pro preview (Morado/Rosa) */
+.tema-preview.aurora { background: #1e1f29; }
+.tema-preview.aurora .tp-sidebar { background: #282a36; }
+.tema-preview.aurora .tp-topbar { background: rgba(189, 147, 249, 0.4); }
+.tema-preview.aurora .tp-col { background: rgba(68, 71, 90, 0.6); }
 
-/* Soleado preview (Borgoña) */
-.tema-preview.soleado { background: #1a0505; }
-.tema-preview.soleado .tp-sidebar { background: #2d0a0a; }
-.tema-preview.soleado .tp-topbar { background: rgba(165, 42, 42, 0.3); }
-.tema-preview.soleado .tp-col { background: rgba(61, 18, 18, 0.5); }
+/* Deep Ocean preview (Teal) */
+.tema-preview.soleado { background: #021b1f; }
+.tema-preview.soleado .tp-sidebar { background: #04282e; }
+.tema-preview.soleado .tp-topbar { background: rgba(23, 165, 137, 0.35); }
+.tema-preview.soleado .tp-col { background: rgba(10, 57, 64, 0.7); }
 
-/* Preview corregida (Cian sobre Fondo Oscuro) */
+/* Lava Sunset preview (Naranja/Rojo) */
 .tema-preview.oceano { 
-    background: #020c1b; 
+    background: #1a0500; 
 }
 .tema-preview.oceano .tp-sidebar { 
-    background: #051933; 
+    background: #2b0a02; 
 }
 .tema-preview.oceano .tp-topbar { 
-    background: rgba(0, 210, 255, 0.3); 
+    background: rgba(255, 93, 26, 0.4); 
 }
 .tema-preview.oceano .tp-col { 
-    background: rgba(10, 37, 71, 0.7); 
-    border: 1px solid rgba(0, 210, 255, 0.1);
+    background: rgba(61, 18, 6, 0.7); 
+    border: 1px solid rgba(255, 93, 26, 0.15);
 }
 
 /* Monocromo preview */

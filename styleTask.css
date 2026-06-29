@@ -1,16 +1,16 @@
 :root {
-    --bg-dark: #1e1621;       /* Fondo muy oscuro (casi negro/uva) */
-    --bg-sidebar: #281e2b;    /* Fondo barra lateral */
-    --card-bg: #362939;       /* Fondo de las columnas/tarjetas */
-    --primary-pink: #c94f7c;  /* El rosa del botón y acentos */
-    --text-white: #ffffff;
-    --text-gray: #a8a8a8;
+    --bg-dark: #05070d;       /* Negro azulado, base Cyberpunk */
+    --bg-sidebar: #0a0f1e;    /* Fondo barra lateral */
+    --card-bg: #11172b;       /* Fondo de las columnas/tarjetas */
+    --primary-pink: #00eaff;  /* Cian neón de acentos */
+    --text-white: #eafdff;
+    --text-gray: #5e7a8c;
     
     /* Colores de estado */
-    --color-high: #e74c3c;
-    --color-med: #f1c40f;
-    --color-low: #2ecc71;
-    --bg-card: rgb(30, 22, 33);
+    --color-high: #ff2bd6;
+    --color-med: #faff00;
+    --color-low: #00eaff;
+    --bg-card: #11172b;
 }
 
 * {
@@ -280,23 +280,23 @@ body, .sidebar, .column, .search-box, .icon-btn, a {
    1. VARIABLES DE COLOR (Configuración General)
    ========================================= */
 :root {
-    --bg-modal: #1e1e2d;
+    --bg-modal: #0a0f1e;
     /* Hice el color del input un poco más claro para que resalte sobre el modal */
-    --bg-input: #2a2a3c; 
-    --text-main: #ffffff;
-    --text-muted: #8b8b9d;
-    --accent: #e91e63;
-    --accent-hover: #c2185b;
-    --border-light: rgba(255, 255, 255, 0.1); /* Nuevo: Borde sutil */
+    --bg-input: #161d34; 
+    --text-main: #eafdff;
+    --text-muted: #5e7a8c;
+    --accent: #00eaff;
+    --accent-hover: #00b8cc;
+    --border-light: rgba(0, 234, 255, 0.15); /* Nuevo: Borde sutil */
     
     /* Colores Importancia */
-    --color-high: #ff4757;
-    --color-med: #ffa502;
-    --color-low: #2ed573;
+    --color-high: #ff2bd6;
+    --color-med: #faff00;
+    --color-low: #00eaff;
 /* === CONFIGURACIÓN NEÓN (Modo Oscuro) === */
-    --neon-color: #9f1d48; /* El mismo rosa del botón */
+    --neon-color: #00eaff; /* Cian del tema Cyberpunk */
     /* El brillo se hace con varias sombras superpuestas */
-    --neon-shadow: 0 0 10px rgba(167, 22, 70, 0.6), 0 0 20px rgba(136, 11, 53, 0.3);
+    --neon-shadow: 0 0 10px rgba(0, 234, 255, 0.6), 0 0 20px rgba(0, 234, 255, 0.3);
 }
 /* =========================================
    2. MODO CLARO (Light Mode)
