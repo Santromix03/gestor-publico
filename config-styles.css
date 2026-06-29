@@ -205,6 +205,33 @@ body.light-mode .column {
     border-color: var(--primary-pink);
 }
 
+/* Glow neón propio de cada tema (independiente del tema activo) */
+.tema-card[data-tema="noche-oscura"]:hover,
+.tema-card[data-tema="noche-oscura"].active {
+    border-color: #00eaff;
+    box-shadow: 0 0 10px rgba(0,234,255,0.5), 0 0 22px rgba(0,234,255,0.3);
+}
+.tema-card[data-tema="aurora-boreal"]:hover,
+.tema-card[data-tema="aurora-boreal"].active {
+    border-color: #bd93f9;
+    box-shadow: 0 0 10px rgba(189,147,249,0.5), 0 0 22px rgba(255,121,198,0.3);
+}
+.tema-card[data-tema="soleado"]:hover,
+.tema-card[data-tema="soleado"].active {
+    border-color: #17a589;
+    box-shadow: 0 0 10px rgba(23,165,137,0.5), 0 0 22px rgba(23,165,137,0.3);
+}
+.tema-card[data-tema="oceano"]:hover,
+.tema-card[data-tema="oceano"].active {
+    border-color: #ff5e1a;
+    box-shadow: 0 0 10px rgba(255,93,26,0.5), 0 0 22px rgba(255,160,0,0.3);
+}
+.tema-card[data-tema="monocromo"]:hover,
+.tema-card[data-tema="monocromo"].active {
+    border-color: #aaaaaa;
+    box-shadow: 0 0 10px rgba(170,170,170,0.4), 0 0 22px rgba(170,170,170,0.25);
+}
+
 .tema-check {
     display: none;
     position: absolute;
@@ -215,6 +242,12 @@ body.light-mode .column {
     filter: drop-shadow(0 0 4px rgba(201,79,124,0.6));
 }
 .tema-card.active .tema-check { display: block; }
+
+.tema-card[data-tema="noche-oscura"] .tema-check { color: #00eaff; filter: drop-shadow(0 0 4px rgba(0,234,255,0.6)); }
+.tema-card[data-tema="aurora-boreal"] .tema-check { color: #bd93f9; filter: drop-shadow(0 0 4px rgba(189,147,249,0.6)); }
+.tema-card[data-tema="soleado"] .tema-check { color: #17a589; filter: drop-shadow(0 0 4px rgba(23,165,137,0.6)); }
+.tema-card[data-tema="oceano"] .tema-check { color: #ff5e1a; filter: drop-shadow(0 0 4px rgba(255,93,26,0.6)); }
+.tema-card[data-tema="monocromo"] .tema-check { color: #aaaaaa; filter: drop-shadow(0 0 4px rgba(170,170,170,0.5)); }
 
 .tema-nombre {
     font-size: 0.8rem;
